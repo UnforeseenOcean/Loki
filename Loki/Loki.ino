@@ -25,6 +25,7 @@ DFRobotDFPlayerMini myDFPlayer;
 void printDetail(uint8_t type, int value);
 
 int songIndex = 1;
+// Adjust this to the amount of songs including the greeting (the first track must be a greeting, it automatically plays)
 const int maxSongCount = 41;
 
 const int button = 2;
@@ -58,6 +59,7 @@ void setup() {
     // Wait while the track finishes playing
   }
   EIFR = 1;
+  // Set this to the length of the greeting track
   delay(7000);
   attachInterrupt(digitalPinToInterrupt(button), playbackCtrl, FALLING);
   Serial.println("Ready");
@@ -86,6 +88,7 @@ void loop() {
   }
 }
 
+// The code below controls the audio playback, though sometimes it eats the button press.
 void playbackCtrl() {
   static unsigned long lit = 0;
   unsigned long inttime = millis();
