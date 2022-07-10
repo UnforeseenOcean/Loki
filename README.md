@@ -35,5 +35,45 @@ This diagram, while crude, should help you set it up.
 
 ![IMG1657432654](https://user-images.githubusercontent.com/11834016/178133284-76e07bc3-b679-4044-9ae4-a4e65c2dc0b9.png)
 
+Depending on your power source, you might need to make this simple circuit to add a little bit of load to the circuit. I know there are more intelligent way to handle this (such as a circuit that connects 150mA load every few seconds) but this dumb circuit can also act as a way to add lighting and it's very compact, so it can be stuffed into the toy. This circuit will also act as a buffer if the motor pulls too much current while it spins up.
 
+![IMG1657433279](https://user-images.githubusercontent.com/11834016/178133483-023f9771-fa96-4a59-8bd8-634060db2aea.png)
 
+If you cannot get past the initialization step, you need to increase the current capability of the power source. Brown-out detection on Arduino will keep resetting the CPU if the power rail is unstable.
+
+# Generating music files
+
+You can use any DAW to set up a beat detection (I used Fruity Peak Controller, Maximus, and Parametric EQ 2) for easier conversion.
+
+Or if you have some time on your hand, you can place a tone where you want.
+
+Set the DAW to output only the tone to the right channel and music only to the left channel.
+
+Set the tone volume to the loudest possible volume. This ensures a proper turn-on and turn-off signal. You won't hear it while it's inside the unit, so it's okay if it clips/distorts.
+
+Save the files in this syntax:
+```
+XXXXFilename.mp3
+```
+Where XXXX is a 4-digit index number, from 0001. It must be sequential, else the code will fail.
+
+### Good example
+```
+0001Welcome.mp3
+0002Loki.mp3
+0003UniverseOnFire.mp3
+0004Lowenherz.mp3
+0005ConstellationOfTears.mp3
+0006HypaHypa.mp3
+...
+```
+### Bad example
+```
+001Welcome.mp3
+0003Loki.mp3
+4Lowenherz.mp3
+HypaHypa.mp3
+...
+```
+
+For more info on how the signal should be structured, refer to the 0001Demo.mp3 inside this repository.
