@@ -43,6 +43,8 @@ Depending on your power source, you might need to make this simple circuit to ad
 
 If you cannot get past the initialization step, you need to increase the current capability of the power source. Brown-out detection on Arduino will keep resetting the CPU if the power rail is unstable.
 
+**NOTE: If your Arduino does not reset properly on power-up state, extend the reset switch and place it somewhere on your toy. It will be needed to play the music.**
+
 # Generating music files
 
 You can use any DAW to set up a beat detection (I used Fruity Peak Controller, Maximus, and Parametric EQ 2) for easier conversion.
