@@ -5,6 +5,8 @@ Turn any motorized toy into musical moving thing
 This project turns any battery operated toys (though USB powered toys are recommended) into a musical puppet. Recommended as a project for intermediate Arduino and electronics tinkerers.
 
 ## How it works
+![IMG1657434887](https://user-images.githubusercontent.com/11834016/178134115-42bc4238-87ee-466f-a4fe-d91a786a03e4.png)
+
 It's divided into two parts -- one that controls the audio and one that controls the movement.
 
 The audio control is made up of two components, one is shared between the two parts. One component is the Arduino Nano board, but you can use any 3.3V/5V board you'd like. The other is DFPlayer Mini, an MP3 player module.
