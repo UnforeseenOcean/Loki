@@ -79,3 +79,5 @@ HypaHypa.mp3
 ```
 
 For more info on how the signal should be structured, refer to the 0001Demo.mp3 inside this repository.
+
+The diagram and the code refers to the motor control channel as "Left channel", but the right channel is used instead.
