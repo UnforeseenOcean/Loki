@@ -1,5 +1,5 @@
 /*
- * Loki
+ * Loki (Revision 1003)
  * (C) 2022 Blackbeard Softworks
  * 
  * This code relies on external hardware to be present.
@@ -7,15 +7,13 @@
  * 
  * The music must be prepared in this way:
  * - The input file must be MP3
- * - Left channel is used exclusively for motor control (meaning you can implement PWM at low frequency with amplitude modulation - from my testing it was <20Hz)
- * - Left channel must ONLY contain motor control signal (no voice, no music, only beeps at about 1024Hz~2048Hz)
+ * - Right channel is used exclusively for motor control (meaning you can implement PWM at low frequency with amplitude modulation - from my testing it was <20Hz)
+ * - Right channel must ONLY contain motor control signal (no voice, no music, only beeps at about 1024Hz~2048Hz)
  * - The beeps must not taper off in volume (it causes the motor to judder, so it needs to at least sound as if it turns on and off instantly)
- * - Use the DAW or other solutions to generate the beeps on the LEFT CHANNEL ONLY
- * - Leave the right channel alone or adjust its volume (you CANNOT adjust the volume in code. It won't work. Adding a resistor for smaller speakers does work. About 51 Ohms work well)
- * - Left channel MUST be at 0db attenuation (meaning, it peaks and/or clips. Crank it up!)
+ * - Use the DAW or other solutions to generate the beeps on the RIGHT CHANNEL ONLY
+ * - Leave the left channel alone or adjust its volume (you CANNOT adjust the volume in code. It won't work. Adding a resistor for smaller speakers does work. About 51 Ohms work well)
+ * - Right channel MUST be at 0db attenuation (meaning, it peaks and/or clips. Crank it up!)
  */
-
-
 
 #include <DFRobotDFPlayerMini.h>
 #include <SoftwareSerial.h>
