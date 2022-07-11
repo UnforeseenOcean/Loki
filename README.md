@@ -83,3 +83,16 @@ HypaHypa.mp3
 For more info on how the signal should be structured, refer to the 0001Demo.mp3 inside this repository.
 
 The diagram and the code refers to the motor control channel as "Left channel", but the right channel is used instead.
+
+# Motor reversing circuit
+Some toys (such as dancing cactus) may need the motor to reverse its direction every so often to prevent damages.
+
+Build the circuit as follows, and attach it to the input of the H-bridge motor driver.
+
+![IMG1657520515](https://user-images.githubusercontent.com/11834016/178201157-39ab81a8-5b2a-4cf6-b999-2ce706ecf5dc.png)
+
+D13 is the D13 pin (or its equivalent) on the MCU board, and SIG is the output from LM393 module. Connect it and use the new version of the code.
+
+Then adjust the timing of the blinks on the Arduino accordingly.
+
+
