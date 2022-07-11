@@ -35,7 +35,7 @@ The motor doesn't need any more than one 104 capacitor placed between the positi
 
 This diagram, while crude, should help you set it up.
 
-![IMG1657432654](https://user-images.githubusercontent.com/11834016/178133284-76e07bc3-b679-4044-9ae4-a4e65c2dc0b9.png)
+![IMG1657432654](https://user-images.githubusercontent.com/11834016/178202643-3cc788c1-09ec-45d3-9fe9-f1d576d7166a.png)
 
 Depending on your power source, you might need to make this simple circuit to add a little bit of load to the circuit. I know there are more intelligent way to handle this (such as a circuit that connects 150mA load every few seconds) but this dumb circuit can also act as a way to add lighting and it's very compact, so it can be stuffed into the toy. This circuit will also act as a buffer if the motor pulls too much current while it spins up.
 
@@ -81,8 +81,6 @@ HypaHypa.mp3
 ```
 
 For more info on how the signal should be structured, refer to the 0001Demo.mp3 inside this repository.
-
-The diagram and the code refers to the motor control channel as "Left channel", but the right channel is used instead.
 
 # Motor reversing circuit
 Some toys (such as dancing cactus) may need the motor to reverse its direction every so often to prevent damages.
