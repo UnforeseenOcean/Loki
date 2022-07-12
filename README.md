@@ -95,4 +95,12 @@ D13 is the D13 pin (or its equivalent) on the MCU board, and SIG is the output f
 
 Then adjust the timing of the blinks on the Arduino accordingly.
 
+## How it works
 
+When both inputs are LOW or only the D13 is HIGH, the circuit will not allow the signal to pass through.
+
+When only the SIG pin is HIGH, it passes the signal through.
+
+But when both SIG and D13 pin is high, it will change the signal from 1-0 to 0-1.
+
+![IMG1657515188](https://user-images.githubusercontent.com/11834016/178490419-64f1d649-e6bf-4ade-9df2-eb4bcfaf3451.png)
