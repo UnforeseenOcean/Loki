@@ -4,7 +4,7 @@ Turn any motorized toy into musical moving thing
 ## Overview
 This project turns any battery operated toys (though USB powered toys are recommended) into a musical puppet. Recommended as a project for intermediate Arduino and electronics tinkerers.
 
-**ERRATA FOR THE SCHEMATIC: C1 (1000uF) should be replaced with a 470uF electrolytic capacitor.**
+**ERRATA FOR THE SCHEMATIC: C1 (1000uF) should be replaced with a 100uF electrolytic capacitor.** If the circuit doesn't respond correctly, remove this capacitor.
 
 ## How it works
 ![IMG1657434887](https://user-images.githubusercontent.com/11834016/178134115-42bc4238-87ee-466f-a4fe-d91a786a03e4.png)
