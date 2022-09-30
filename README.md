@@ -6,6 +6,8 @@ This project turns any battery operated toys (though USB powered toys are recomm
 
 **ERRATA FOR THE SCHEMATIC: C1 (1000uF) should be replaced with a 100uF electrolytic capacitor.** If the circuit doesn't respond correctly, remove this capacitor.
 
+**ERRATA FOR THE SCHEMATIC: 1K resistors should be added between DFPlayer Mini and Arduino.**
+
 ## How it works
 ![IMG1657434887](https://user-images.githubusercontent.com/11834016/178134115-42bc4238-87ee-466f-a4fe-d91a786a03e4.png)
 
