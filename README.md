@@ -49,6 +49,10 @@ If you cannot get past the initialization step, you need to increase the current
 
 **NOTE: If your Arduino does not reset properly on power-up state, extend the reset switch and place it somewhere on your toy. It will be needed to play the music.**
 
+If you hear clicking noises while the music/song is playing, you need to add 1Kohm resistors on RX and TX line between DFPlayer Mini and Arduino.
+
+As usual, please be careful while using lithium-ion or lithium polymer batteries. Only use protected batteries, and if possible use canister-type batteries (such as 18650 batteries with a protection circuit inside a holder) instead of pouch-type batteries, since they can be damaged easily by children or animals (if placed outside of the case) and cause injuries.
+
 # Generating music files
 
 You can use any DAW to set up a beat detection (I used Fruity Peak Controller, Maximus, and Parametric EQ 2) for easier conversion.
